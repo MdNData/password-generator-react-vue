@@ -1,1 +1,147 @@
-/*# sourceMappingURL=index.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  gap: 0;
+}
+
+body {
+  background-color: #1c2541;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  height: 64px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(12, 13, 22, 0.7450980392);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: 1px 0px 4px #0c0d16;
+  z-index: 50;
+}
+nav div.nav-logo a {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media (max-width: 1023px) {
+  nav div.nav-logo a {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+}
+nav div.nav-logo a img {
+  height: 40px;
+  margin-right: 13px;
+  background-color: #eff0f2;
+  border-radius: 50%;
+}
+nav div.nav-logo a h2 {
+  color: #eff0f2;
+  font-family: Lobster, cursive;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+main {
+  padding-top: 200px;
+}
+
+footer {
+  display: block;
+  color: rgba(239, 240, 242, 0.7843137255);
+  padding: 20px 0;
+  background-color: #000710;
+  font-family: Montserrat;
+  font-size: 16px;
+}
+footer > div.socials {
+  padding-bottom: 20px;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+@media (min-width: 750px) {
+  footer > div.socials {
+    width: 95%;
+    margin-bottom: 0;
+    justify-content: space-between;
+  }
+  footer > div.socials a {
+    margin: 10px 0 10px 0;
+  }
+}
+footer > div.socials > div:first-child {
+  display: flex;
+  color: rgba(239, 240, 242, 0.7843137255);
+  font-family: Lobster, cursive;
+  align-items: center;
+  justify-self: flex-start;
+  font-weight: 100;
+  font-size: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+@media (min-width: 750px) {
+  footer > div.socials > div:first-child {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+footer > div.socials > div:first-child img {
+  height: 40px;
+  margin-right: 13px;
+  background-color: #eff0f2;
+  border-radius: 50%;
+}
+footer > div.socials > div:first-child h3 {
+  font-family: Lobster, cursive;
+  font-weight: 100;
+  font-size: 30px;
+  color: #eff0f2;
+}
+footer > div.socials > div:nth-child(2) {
+  display: flex;
+  color: rgba(239, 240, 242, 0.7843137255);
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+@media (min-width: 750px) {
+  footer > div.socials > div:nth-child(2) {
+    min-width: 300px;
+    width: auto;
+  }
+}
+footer > div.socials a {
+  color: rgba(239, 240, 242, 0.7843137255);
+  text-decoration: none;
+}
+footer > div.socials a:hover {
+  color: #eff0f2;
+}
+footer > div.socials i {
+  font-size: 26px;
+}
+footer > p {
+  text-align: center;
+  color: rgba(239, 240, 242, 0.7843137255);
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+@media (min-width: 666px) {
+  footer > p {
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=index.css.map */

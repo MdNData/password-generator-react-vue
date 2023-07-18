@@ -1,10 +1,11 @@
-import { Navbar } from "./assets/containers/navbar/Navbar";
-import { Footer } from "./assets/containers/footer/Footer";
+import { Navbar } from "./assets/components/navbar/Navbar";
+import { Footer } from "./assets/components/footer/Footer";
 function App() {
   return (
     <>
-      <Navbar></Navbar>
-      <Footer></Footer>
+      <Navbar />
+      <main></main>
+      <Footer />
     </>
   );
 }

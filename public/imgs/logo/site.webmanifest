@@ -1,0 +1,14 @@
+{
+    "name": "Password Generator",
+    "short_name": "Password Generator",
+    "icons": [
+        {
+            "src": "/imgs/logo/android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
