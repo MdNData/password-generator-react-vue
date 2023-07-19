@@ -49,7 +49,62 @@ nav div.nav-logo a h2 {
 }
 
 main {
-  padding-top: 200px;
+  padding-top: 65px;
+}
+
+.password-generator {
+  margin: 50px auto;
+  width: 305px;
+  text-align: center;
+}
+.password-generator h2 {
+  font-size: 47px;
+  color: white;
+  font-family: Lobster;
+  font-weight: 100;
+}
+.password-generator .generator-container {
+  border: 1px solid white;
+  padding: 20px 15px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  border-radius: 8px;
+  text-align: left;
+  background-color: rgba(3, 5, 34, 0.7215686275);
+}
+.password-generator .generator-container p {
+  font-family: Montserrat;
+  color: white;
+  font-size: 22px;
+}
+.password-generator .generator-container input {
+  margin: 15px auto 20px auto;
+  display: block;
+  background-color: rgba(240, 248, 255, 0.073);
+  border-radius: 5px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 25px;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+}
+.password-generator .generator-container button {
+  display: block;
+  border: 1px solid hsla(0, 0%, 100%, 0);
+  border-radius: 8px;
+  display: block;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 700;
+  margin: auto;
+  padding: 3px 8px;
+}
+.password-generator .generator-container button:hover {
+  background-color: #17142a;
+  border: 1px solid #fff;
+  color: #f0f8ff;
+  cursor: pointer;
 }
 
 footer {
@@ -107,8 +162,13 @@ footer > div.socials > div:first-child img {
 footer > div.socials > div:first-child h3 {
   font-family: Lobster, cursive;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 25px;
   color: #eff0f2;
+}
+@media (min-width: 750px) {
+  footer > div.socials > div:first-child h3 {
+    font-size: 30px;
+  }
 }
 footer > div.socials > div:nth-child(2) {
   display: flex;
