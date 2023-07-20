@@ -2,11 +2,28 @@ import { useState } from "react";
 
 export const PasswordGenerator = () => {
   const [password, setPassword] = useState("");
-  const [passLength, setPassLength] = useState("");
+  const [passLength, setPassLength] = useState(13);
 
-  const handleGenerate = () => {};
+  const handleGenerate = () => {
+      if (passLength > 24 || passLength < 1) {
+        setPassword("Invalid Range");
+      } else {
+        let password = "";
+        const characters =
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*{}[]()/\\'\"~,;:.<>";
 
-  const handleLength = () => {};
+        for (let i = 0; i < passLength; i++) {
+          let rnum = Math.floor(Math.random() * characters.length);
+          password += characters.substring(rnum, rnum + 1);
+        }
+        setPassword(password);
+      }
+
+  };
+
+  const handleLength = (e) => {
+    setPassLength(e.target.value);
+  };
 
   return (
     <div className="password-generator">
