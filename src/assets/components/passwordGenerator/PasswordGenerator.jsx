@@ -6,7 +6,9 @@ export const PasswordGenerator = () => {
 
   const handleGenerate = () => {
     if (passLength > 24 || passLength < 1) {
-      setPassword("Invalid Range");
+      setPassword((prevState) => {
+        return "Invalid Range";
+      });
     } else {
       let password = "";
       const characters =
@@ -16,12 +18,16 @@ export const PasswordGenerator = () => {
         let rnum = Math.floor(Math.random() * characters.length);
         password += characters.substring(rnum, rnum + 1);
       }
-      setPassword(password);
+      setPassword((prevState) => {
+        return password;
+      });
     }
   };
 
   const handleLength = (e) => {
-    setPassLength(e.target.value);
+    setPassLength((prevState) => {
+      return e.target.value;
+    });
   };
 
   return (
